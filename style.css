@@ -236,6 +236,10 @@ a {
 
 /*image..................................................*/
 /* Home section image scroll effect */
+.top-img {
+    display: none;
+}
+
 .home-img {
     position: relative;
     transition: all 0.5s ease;
@@ -300,14 +304,27 @@ a {
 }
 
 @media (max-width: 768px) {
+
+    .top-img {
+        display: block;
+        padding-top: 20vh;
+    }
+
+    .bottom-img {
+        display: none;
+
+    }
+
     .home.scrolled .home-img .img-box {
-        width: 60px;
-        height: 60px;
+        display: none;
+        /* width: 60px;
+        height: 60px; */
     }
 
     .home.scrolled .home-img {
-        bottom: 100px;
-        top: 40% !important;
+        display: none;
+        /* bottom: 100px;
+        top: 40% !important; */
 
     }
 }
@@ -1103,6 +1120,8 @@ h2 span {
         flex-direction: column;
         align-items: center;
         padding: 60px 5%;
+        height: 50%;
+        gap: 20px;
     }
 
     /* 
